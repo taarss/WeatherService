@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="shadow sticky-top d-flex justify-content-center navContainer">
+        <nav class="navbar text-light navbar-expand-sm  col-8 navbar-light>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse text-light navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav text-light mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown dmenu">
+                <a class="nav-link dropdown-toggle text-light" href="#" id="navbardrop" data-toggle="dropdown">
+                  Forecasts
+                </a>
+                <div class="dropdown-menu sm-menu">
+                  <a class="dropdown-item" href="#">4 Days</a>
+                  <a class="dropdown-item" href="#">16 Days</a>
+                  <a class="dropdown-item" href="#">30 Days</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Contact Us</a>
+              </li>
+              </ul>
+              <div class="social-part">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </div>
+            </div>
+          </nav>
+    </div>
+    
+      <main class="col-12 d-flex justify-content-center flex-wrap">
+            <div class="col-8 rounded shadow bg-light mt-3 searchBar">
+                <input class="searchInput col-10 p-3 m-3 border rounded" type="text">
+                <input class="searchBtn border rounded" type="submit" value="Search">
+            </div>
+
+
+              <div class="shadow mainBox col-8 rounded mt-5 d-flex justify-content-between">
+                  <div class="m-4">
+                    <p class="currentWeatherCityName h4 text-light">Vejert i</p>
+                    <p class="currentWeatherTime">KL:</p>
+                    <p class="currentWeatherTemp h1 text-light"></p>
+                    <p class="currentWeatherDes h4 text-light"></p>
+                    <p class="currentWeatherFeelsLike text-light"></p>
+                  </div>    
+                  <img class="weatherIcon">
+              </div>
+              <div class="forecastBox shadow col-8 rounded mt-5 d-flex bg-light flex-wrap">
+                <p class="weatherForecastTitle h5 mt-3 mb-4">Weather forecast for</p>
+              </div>
+              <div class="col-8 d-flex justify-content-between mb-5">
+                <div class="col-7 bg-light mt-5 rounded shadow">
+                    <div id="chart" class="col-12">
+    
+                    </div>
+                  </div>
+                  <div class="col-4 bg-light mt-5 rounded shadow">
+                    <div class="col-12">
+                      <p class="h4 mt-3 mb-4">Details</p>
+                      <p class="humidity border-bottom"></p>
+                      <p class="pressure border-bottom"></p>
+                      <p class="wind border-bottom"></p>
+
+                    </div>
+                  </div>
+              </div>
+              
+            
+      </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/graph.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
