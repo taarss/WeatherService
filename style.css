@@ -1,0 +1,96 @@
+body {
+  min-height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a88cc2), color-stop(#e7cdc1), to(#fcf9f7));
+  background-image: linear-gradient(#a88cc2, #e7cdc1, #fcf9f7);
+}
+
+.navContainer {
+  background-color: #6e3f98;
+}
+
+main {
+  width: 100%;
+}
+
+.mainBox {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#6e3f98), to(#a37697));
+}
+
+.currentWeatherTime {
+  color: #cfc8c8;
+}
+
+.currentWeatherTemp {
+  font-size: 60px;
+}
+
+.weatherIcon {
+  width: 200px;
+  height: 200px;
+}
+
+.forecastBox {
+  margin: 0 auto;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.forecastContainerBox {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: lightgray solid 1px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.forecastContainerBox p:first-of-type {
+  font-size: 20px;
+  color: gray;
+  -webkit-box-flex: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4;
+}
+
+.forecastContainerBox p:nth-of-type(2) {
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.forecastContainerBox p:nth-of-type(3) {
+  width: 150px;
+}
+
+#chart {
+  margin: 0 auto;
+}
+
+.loadMoreBtn {
+  margin: 10px auto;
+  border: none;
+  font-size: 20px;
+  width: 150px;
+}
+
+.loadLessBtn {
+  margin: 10px auto;
+  border: none;
+  font-size: 20px;
+  width: 150px;
+}
+
+.searchBtn {
+  font-size: 25px;
+}
+
+.searchBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */

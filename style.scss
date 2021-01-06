@@ -1,0 +1,87 @@
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(#a88cc2,#e7cdc1,#fcf9f7);
+}
+
+.navContainer{
+    background-color: #6e3f98;
+
+}
+
+main{
+    width: 100%;
+}
+
+
+.mainBox{
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#6e3f98),to(#a37697));
+}
+
+
+.currentWeatherTime{
+    color: rgb(207, 200, 200);
+}
+
+.currentWeatherTemp{
+    font-size: 60px;
+}
+
+.weatherIcon{
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+.forecastBox{
+    margin: 0 auto;
+    transition: 200ms;
+}
+.forecastContainerBox{
+    width: 100%;
+    display: flex;
+    border-bottom: lightgray solid 1px;
+    transition: 200ms;
+    p:first-of-type{
+        font-size: 20px;
+        color: gray;
+        flex-grow: 4;
+    }
+    p:nth-of-type(2){
+        font-weight: bold;
+        font-size: 20px;
+        margin-right: 20px;
+    }
+    p:nth-of-type(3){
+        width: 150px;
+    }
+}
+
+#chart{
+    margin: 0 auto;
+}
+
+
+.loadMoreBtn{
+    margin: 10px auto;
+    border: none;
+    font-size: 20px;
+    width: 150px;
+}
+
+.loadLessBtn{
+    margin: 10px auto;
+    border: none;
+    font-size: 20px;
+    width: 150px;
+}
+
+.searchBtn{
+    font-size: 25px;
+}
+
+.searchBar{
+    display: flex;
+    align-items: center;
+}
